@@ -21,9 +21,8 @@ module.exports = class Stack {
   pop() {
     return this.#array.pop();
   }
-  
+
   peek() {
-    throw new NotImplementedError("Not implemented");
-    // remove line with error and write your code here
+    return this.#array.at(-1);
   }
 };
